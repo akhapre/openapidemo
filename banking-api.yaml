@@ -1,0 +1,10 @@
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: Banking API
+  description: Move your app forward with the Banking API
+servers:
+  - url: https://api.abank.com
+paths:
+  /accounts:
+    $ref: "bankingApiPathItems/accounts_path.yaml#/paths/~1accounts"
