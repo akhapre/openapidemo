@@ -1,0 +1,30 @@
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: ABank Banking API - Primitives Schema
+paths: {}
+
+components: 
+  schemas:  
+      Error:
+        type: object
+        properties:
+          code:
+            type: integer
+            format: int32
+          message:
+            type: string
+          fields:
+            type: string
+      BaseAccount:
+        type: object
+        properties:
+          accountNumber:
+            type: integer
+            format: int32
+          accountBalance:
+            type: integer
+            format: int32
+          typeOfAccount:
+            type: string
+            enum: [CHECKING, CREDIT_CARD]
