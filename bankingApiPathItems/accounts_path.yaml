@@ -36,7 +36,7 @@ paths:
                       } 
                     ]
         401:
-          $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/base_path.yaml#/paths/~1base_path/get/responses/401"
+          $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiPathItems/base_path.yaml#/paths/~1base_path/get/responses/401"
         500:
-          $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/base_path.yaml#/paths/~1base_path/get/responses/401"
+          $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiPathItems/base_path.yaml#/paths/~1base_path/get/responses/401"
           
