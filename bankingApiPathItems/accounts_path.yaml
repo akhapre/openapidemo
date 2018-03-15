@@ -1,0 +1,42 @@
+---
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: ABank API - Accounts
+paths:
+  /accounts:
+    get:
+      summary: All Customer Accounts
+      description: List of all customer accounts
+      responses:    
+        200:
+          description: An array of products
+          content:
+            application/json:
+              schema:
+                type: array
+                items: 
+                  $ref : "../bankingApiComponents/accounts_schema.yaml#/components/schemas/Account"
+              examples:
+                twoaccounts:
+                  summary: Two Accounts
+                  value: 
+                    [
+                      {
+                        "accountNumber":1234,
+                        "accountBalance":400,
+                        "typeOfAccount": "CHECKING",
+                        "routingnumber": 172819279
+                      },{
+                        "accountNumber":1234,
+                        "accountBalance":400,
+                        "typeOfAccount": "CREDIT_CARD",
+                        "availableCredit": 70000,
+                        "expirationDate": "11/31"
+                      } 
+                    ]
+        401:
+          $ref: "./base_path.yaml#/paths/~1base_path/get/responses/401"
+        500:
+          $ref: "./base_path.yaml#/paths/~1base_path/get/responses/401"
+          
