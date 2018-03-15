@@ -9,7 +9,7 @@ components:
             
       Checking:
         allOf: 
-          - $ref: "primitives_schema.yaml#/components/schemas/BaseAccount"
+          - $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/primitives_schema.yaml#/components/schemas/BaseAccount"
           - type: object
             properties:
               routingNumber:
@@ -17,7 +17,7 @@ components:
                 format: int32          
       CreditCard:
         allOf: 
-          - $ref: "primitives_schema.yaml#/components/schemas/BaseAccount"
+          - $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/primitives_schema.yaml#/components/schemas/BaseAccount"
           - type: object
             properties:
               availableCredit:
