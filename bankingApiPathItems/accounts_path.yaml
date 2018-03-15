@@ -16,7 +16,7 @@ paths:
               schema:
                 type: array
                 items: 
-                  $ref : "../bankingApiComponents/accounts_schema.yaml#/components/schemas/Account"
+                  $ref : "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/accounts_schema.yaml#/components/schemas/Account"
               examples:
                 twoaccounts:
                   summary: Two Accounts
@@ -36,7 +36,7 @@ paths:
                       } 
                     ]
         401:
-          $ref: "./base_path.yaml#/paths/~1base_path/get/responses/401"
+          $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/base_path.yaml#/paths/~1base_path/get/responses/401"
         500:
-          $ref: "./base_path.yaml#/paths/~1base_path/get/responses/401"
+          $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/base_path.yaml#/paths/~1base_path/get/responses/401"
           
