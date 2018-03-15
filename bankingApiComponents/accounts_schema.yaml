@@ -1,0 +1,34 @@
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: ABank Banking API - Account Schema
+paths: {}
+
+components: 
+  schemas:  
+            
+      Checking:
+        allOf: 
+          - $ref: "primitives_schema.yaml#/components/schemas/BaseAccount"
+          - type: object
+            properties:
+              routingNumber:
+                type: integer
+                format: int32          
+      CreditCard:
+        allOf: 
+          - $ref: "primitives_schema.yaml#/components/schemas/BaseAccount"
+          - type: object
+            properties:
+              availableCredit:
+                type: integer
+                format: date   
+              expirationDate:
+                type: string
+      Account:
+        type: object
+        discriminator:
+          propertyName: typeOfAccount
+        oneOf:
+        - $ref: "#/components/schemas/Checking"
+        - $ref: "#/components/schemas/CreditCard"
