@@ -1,0 +1,26 @@
+---
+openapi: "3.0.0"
+info:
+  version: "1.0.0"
+  title: ABank Banking API - Base Path
+
+paths:
+  /base_path:
+    get:
+      summary: Product Types
+      description: |
+        Common response codes on all paths
+      responses:  
+        401:
+          description: User  is unauthorized to acess specific resource
+          content:
+            application/json:
+              schema:
+                $ref: "../bankingApiComponents/primitives_schema.yaml#/components/schemas/Error"
+        500:
+          description: Server side error
+          content:
+            application/json:
+              schema:
+                $ref: "../bankingApiComponents/primitives_schema.yaml#/components/schemas/Error"
+                
