@@ -16,11 +16,11 @@ paths:
           content:
             application/json:
               schema:
-                $ref: "../bankingApiComponents/primitives_schema.yaml#/components/schemas/Error"
+                $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/primitives_schema.yaml#/components/schemas/Error"
         500:
           description: Server side error
           content:
             application/json:
               schema:
-                $ref: "../bankingApiComponents/primitives_schema.yaml#/components/schemas/Error"
+                $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/primitives_schema.yaml#/components/schemas/Error"
                 
