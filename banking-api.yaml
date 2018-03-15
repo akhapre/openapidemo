@@ -7,4 +7,4 @@ servers:
   - url: https://api.abank.com
 paths:
   /accounts:
-    $ref: "bankingApiPathItems/accounts_path.yaml#/paths/~1accounts"
+    $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiPathItems/accounts_path.yaml#/paths/~1accounts"
