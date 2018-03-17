@@ -17,8 +17,7 @@ paths:
                 type: array
                 items: 
                   $ref : "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/accounts_schema.yaml#/components/schemas/Account"
-              example:
-                application/json:
+              example: |
                   [
                     {
                       "accountNumber":1234,
