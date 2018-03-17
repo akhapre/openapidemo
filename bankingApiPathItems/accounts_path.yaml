@@ -17,21 +17,8 @@ paths:
                 type: array
                 items: 
                   $ref : "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiComponents/accounts_schema.yaml#/components/schemas/Account"
-              example: |
-                  [
-                    {
-                      "accountNumber":1234,
-                      "accountBalance":400,
-                      "typeOfAccount": "CHECKING",
-                      "routingnumber": 172819279
-                    },{
-                      "accountNumber":1234,
-                      "accountBalance":400,
-                      "typeOfAccount": "CREDIT_CARD",
-                      "availableCredit": 70000,
-                      "expirationDate": "11/31"
-                    } 
-                  ]
+              example: {"a":"b"}
+                  
         401:
           $ref: "https://raw.githubusercontent.com/akhapre/openapidemo/master/bankingApiPathItems/base_path.yaml#/paths/~1base_path/get/responses/401"
         500:
